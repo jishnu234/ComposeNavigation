@@ -8,12 +8,19 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.navArgument
 import com.example.screennavigation.screens.detailscreen.DetailScreen
 import com.example.screennavigation.screens.loginscreen.LoginScreenApp
+import com.example.screennavigation.screens.onboadring.OnboardingScreen
 
 
 @Composable
 fun Navigation() {
     val navController = rememberNavController()
-    NavHost(navController = navController, startDestination = Screens.LoginScreen.route) {
+    NavHost(navController = navController, startDestination = Screens.OnBoardingScreen.route) {
+        composable(
+            route = Screens.OnBoardingScreen.route
+        ){
+            OnboardingScreen(navController)
+        }
+
         composable(route = Screens.LoginScreen.route) {
             LoginScreenApp(navController = navController)
         }

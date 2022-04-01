@@ -12,6 +12,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.screennavigation.naviagtion.Navigation
 import com.example.screennavigation.screens.loginscreen.LoginScreenApp
+import com.example.screennavigation.screens.onboadring.OnboardingScreen
 import com.example.screennavigation.ui.theme.ScreenNavigationTheme
 
 class MainActivity : ComponentActivity() {
@@ -25,6 +26,7 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colors.background
                 ) {
                     Navigation()
+//                    OnboardingScreen()
                 }
             }
         }
