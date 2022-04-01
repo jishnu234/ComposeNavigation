@@ -15,6 +15,7 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.navigation.NavController
 import com.example.screennavigation.naviagtion.Screens
+import com.example.screennavigation.screens.composable.ProgressBar
 import com.example.screennavigation.screens.loginscreen.composable.InputFieldComposable
 import com.example.screennavigation.screens.loginscreen.composable.LottieAnimationComposable
 
@@ -66,6 +67,9 @@ fun LoginScreenApp(navController: NavController) {
             ) {
                 Text(text = "Send Data")
             }
+            ProgressBar(
+                progress = 70f
+            )
         }
     }
 }
